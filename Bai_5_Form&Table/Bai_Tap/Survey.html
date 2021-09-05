@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+</head>
+<body>
+<form action="Survey.html" method="get">
+    <div>
+        <h1>Market Research Survey</h1>
+        <p>Please take a few moments to complete this satisfaction survey</p>
+        <p></p>
+    </div>
+    <div>
+        <label>What is your age rank?</label></br>
+        <select name="age" id="age">
+            <option value="18-24">18 - 24</option>
+            <option value="25-34">25 - 34</option>
+            <option value="35-50">35 - 50</option>
+            <option value="50+">50+</option>
+        </select>
+    </div>
+    <div>
+        <label>What is your nearly income range?</label></br>
+        <select name="income" id="income">
+            <option value="$0-$25,000">$0 - $25,000</option>
+            <option value="$25,001-$50,000">$25,001 - $50,000</option>
+            <option value="$50,001-$100,000">$50,001 - $100,000</option>
+            <option value="100,000+">100,000+</option>
+        </select>
+    </div>
+    <div>
+        <label>Gender identify</label></br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label></br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label></br>
+        <input type="radio" id="nonbinary" name="gender" value="Nonbinary">
+        <label for="nonbinary">Nonbinary</label></br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label></br>
+        <div style="padding-left: 25px">
+        <textarea style="width: 140px;height: 15px;"></textarea>
+        </div>
+    </div>
+    <div>
+        <label>Which of the following products have your purchased in the last 2 months. Please check all that apply.</label></br>
+        <input type="checkbox" id="product1" name="product1" value="Product1">
+        <label for="product1">Product 1</label></br>
+        <input type="checkbox" id="product2" name="product2" value="Product2">
+        <label for="product1">Product 2</label></br>
+        <input type="checkbox" id="product3" name="product3" value="Product3">
+        <label for="product1">Product 3</label></br>
+    </div>
+    <div>
+        <label>How often would you use our new product?</label></br>
+        <input type="radio" id="daily" name="oftening" value="Daily">
+        <label for="daily">Daily</label></br>
+        <input type="radio" id="weekly" name="ofterning" value="Weekly">
+        <label for="weekly">Weekly</label></br>
+        <input type="radio" id="monthly" name="oftening" value="Monthly">
+        <label for="monthly">Monthly</label></br>
+    </div>
+    <div>
+        <label>What would you pay for the new product?</label><br>
+        <label for="pay$">$</label>
+        <input type="text" id="pay$" name="pay$" style="width:60px;height: 15px">
+        <label for="cent"> . </label>
+        <input for="cent" id="cent" name="cent" style="width:10px;height: 15px">
+        <p style="padding-left:11px ">Dolla</p>
+    </div>
+
+</form>
+</body>
+</html>
