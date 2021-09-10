@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Đổi Tiền Tệ</title>
+</head>
+<body>
+    
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="text" id='amount'> </td>
+                <td>
+                    <select id='from'>
+                        <option value="VND">VietNam</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='to'>
+                        <option value="VND">VietNam</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" onclick="convert()" >Convert</button>
+                </td>
+            </tr>
+            <tr>
+                <td id='ketqua'>
+                    
+                </td>
+            </tr>
+            
+        </table>
+
+    <script>
+        function convert() {
+            let amount = document.getElementById('amount').value;
+            let from = document.getElementById('from').value;
+            let to = document.getElementById('to').value;
+            let result;
+
+            if(from === 'USD' && to === 'VND'){
+                result = amount * 23000;
+            }else if(from === 'VND' && to === 'USD'){
+                result = amount / 23000;
+            }
+            else{
+                result = amount;
+            }
+            if(to ==='VND'){
+                document.getElementById('ketqua').innerText="Result: "+ result + "VND";
+            }else{
+                document.getElementById('ketqua').innerText="Result: "+ result + "USD";
+            }
+}
+    </script>
+</body>
+
+</html>
